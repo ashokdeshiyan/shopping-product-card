@@ -6,11 +6,60 @@
 
 body{
     background-color: var(--Cream);
+    font-family:"Montserrat"
 }
-
 
 .container{
-    
-    max-width: 1440px;
+    border-radius: 3rem;
+    display: block;
+    max-width: 720px;
     margin: auto;
+    border: 1px solid #000000;
 }
+
+.container-main{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    
+}
+
+@media (max-width: 767px) {
+    .container-main {
+      flex-direction: column;
+    }
+  }
+.container-main div{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.image-container {
+    width: 100%;
+    max-width: 1440px; /* Set maximum width for desktop */
+    margin: 0 auto;
+    text-align: center;
+    
+  }
+  
+  .mobile-image {
+    display: none; /* Hide mobile image by default */
+  }
+  
+  @media (max-width: 375px) {
+    .desktop-image {
+      display: none; /* Hide desktop image on mobile */
+    }
+    .mobile-image {
+      display: block; /* Display mobile image on mobile */
+      max-width: 100%; /* Adjust image size as needed */
+    }
+  }
+ 
+  
+  
+  
+  
