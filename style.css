@@ -1,0 +1,16 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+}
+
+
+body{
+    background-color: var(--Cream);
+}
+
+
+.container{
+    
+    max-width: 1440px;
+    margin: auto;
+}
