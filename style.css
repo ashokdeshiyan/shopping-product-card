@@ -10,7 +10,7 @@ body{
 }
 
 .container{
-    border-radius: 3rem;
+    border-radius: 1rem;
     display: block;
     max-width: 720px;
     margin: auto;
@@ -44,6 +44,7 @@ body{
     text-align: center;
     
   }
+
   
   .mobile-image {
     display: none; /* Hide mobile image by default */
@@ -58,8 +59,15 @@ body{
       max-width: 100%; /* Adjust image size as needed */
     }
   }
+
+.image-container img{
+    height: inherit;
+    width: inherit;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
  
   
   
-  
+
   
